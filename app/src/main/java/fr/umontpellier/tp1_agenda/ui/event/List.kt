@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun EventList(events: MutableList<String>) {
+fun EventList(events: MutableList<Event>) {
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         items(events) { event ->
             EventItem(event = event, delete = {
